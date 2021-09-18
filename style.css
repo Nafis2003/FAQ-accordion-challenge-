@@ -17,7 +17,7 @@ html{
 
 }
 
-body {
+body main{
 width: 100%;
 min-height: 100vh;
 background:linear-gradient(var(--soft-violet),var(--soft-blue));
@@ -34,7 +34,8 @@ color: var(--very-dark-desaturated-blue);
 
 #container{
 display: flex;
-	     justify-content: center;
+	
+	justify-content: center;
 	   
 	     flex-direction: column;
 				background: #fff;
@@ -46,7 +47,7 @@ display: flex;
 				background: url('images/bg-pattern-mobile.svg') #fff;
 				background-repeat: no-repeat;
 				background-position: top center;
-				box-shadow:10px 30px 30px rgba(0,0,0,0.3);
+				box-shadow:10px 30px 30px rgba(0,0,0,0.2);
 }
 
 #image{
