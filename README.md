@@ -1,7 +1,7 @@
 # Frontend Mentor - FAQ accordion card
 
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
-
+Link: https://nafis2003.github.io/FAQ-accordion-challenge-/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
