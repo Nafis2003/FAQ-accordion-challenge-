@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Kumbh Sans', sans-serif;
+}
+
+html{
+--very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    --soft-violet: hsl(273, 75%, 66%);
+--soft-blue: hsl(240, 73%, 65%);
+
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+background:linear-gradient(var(--soft-violet),var(--soft-blue));
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 1rem;
+font-size: 12px;
+color: var(--very-dark-desaturated-blue);
+}
+
+#container{
+display: flex;
+	     justify-content: center;
+	   
+	     flex-direction: column;
+				background: #fff;
+				width:100%;
+				height: auto;
+				padding:2rem;
+				position: relative;
+				border-radius:24px;
+				background: url('images/bg-pattern-mobile.svg') #fff;
+				background-repeat: no-repeat;
+				background-position: top center;
+}
+
+#image{
+				position:absolute;
+top:0;
+left:50%;
+transform: translate(-50%,-50%);
+}
+
+#woman{
+padding: 0 2em 1em 0;
+
+}
+
+
+#accordion{
+		padding:80px 0 0 0;		
+}
+
+#accordion h1{
+text-align: center;
+font-size: 2rem;
+font-weight:700;
+color: var(--very-dark-desaturated-blue);
+}
+
+.accordion-item{
+    margin:1rem 0;
+    position: relative;
+    color: var(--dark-grayish-blue);
+}
+
+.accordion-item button{
+font-size:1em;
+background: none;
+width:100%;
+border: 0;
+outline: 0;
+text-align: left;
+color: var(--dark-grayish-blue);
+}
+
+.divider{
+width: 100%;
+height:1px;
+background: var( --light-grayish-blue);
+}
+
+.arrow-icon img{
+vertical-align: middle;
+float: right;
+padding:0 10px;
+}
+
+.accordion-item p{
+    display: none;
+}
+
+.accordion-item:active button {
+color: var(--soft-red) ;
+}
+
+button.active {
+color: var(--very-dark-grayish-blue) ;
+font-weight: 700;
+}
+p.active{
+display: block;
+}
+
+button.active .arrow-icon img{
+transition:0.5s;
+transform: rotate(180deg);
+}
+
+#box{
+				display: none;
+}
+
+.attribution { 
+position: absolute;
+bottom: 50px;
+
+color: var(--light-grayish-blue);
+font-size: 11px; text-align: center;
+     }
+    .attribution a { 
+    color: var(--very-dark-desaturated-blue) }
+
+@media(min-width:1000px){
+	
+	
+	#container{
+	max-width:900px;
+	justify-content: flex-end;
+	align-items:flex-end;
+	     flex-direction:row;
+	     padding: 100px;
+					background: url('images/bg-pattern-desktop.svg') #fff;
+				background-repeat: no-repeat;
+				background-position:top -16rem left -36rem;
+	}
+	
+	#image{
+	height: auto;
+	width: 50%;
+overflow: hidden;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translate(0%,-50%);
+					
+	}
+	
+	#woman{	
+	position: relative;	
+	padding: 0;
+	left:-20%;
+	}
+
+#container:before{
+content:url("images/illustration-box-desktop.svg");
+z-index: 2;
+display: block;
+position: absolute;
+top: 50%;
+left:0%;
+transform: translate(-50%,-30%);
+
+				
+}
+
+
+
+
+
+#accordion{
+		padding: 0;
+		width:50%;
+}
+
+#accordion h1{
+text-align: left;
+}
+	
+				
+}
